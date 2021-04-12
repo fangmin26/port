@@ -1,0 +1,467 @@
+@font-face {
+  font-family: 'S-CoreDream-9Black';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.scroll {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1002;
+  width: 50px;
+  height: 50px;
+  background: #ccc;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+}
+
+/*fixed*/
+.fixed {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*layout*/
+#section1 {
+  height: 1500px;
+  background: #fff;
+}
+
+#section2 {
+  height: 3000px;
+  border: 1px solid red;
+}
+
+#section3 {
+  height: 3000px;
+}
+
+#section4 {
+  height: 3000px;
+}
+
+#section5 {
+  height: 3000px;
+}
+
+#section6 {
+  height: 3000px;
+}
+
+#section7 {
+  height: 3000px;
+}
+
+#section8 {
+  height: 3000px;
+}
+
+/* header */
+#header {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header h1 {
+  font-size: 46px;
+  margin-left: 9.5vw;
+  font-family: 'Poppins', sans-serif;
+}
+
+#header h1 span {
+  font-size: 14px;
+  font-weight: 200;
+  padding-left: 30px;
+}
+
+#header .ham {
+  margin-right: 9.5vw;
+  font-size: 14px;
+  font-weight: 200;
+  padding-top: 25px;
+}
+
+#header .ham_response {
+  display: none;
+  width: 30px;
+  height: 30px;
+  /* background: rgba(0,0,0,0.4); */
+  position: absolute;
+  top: 13vh;
+  right: 9.6vw;
+}
+
+#header .ham_response span {
+  display: inline-block;
+  width: 100%;
+  height: 3px;
+  background: black;
+  position: relative;
+}
+
+#header .ham_response span::before {
+  content: '';
+  position: relative;
+  top: -9px;
+  left: 0;
+  height: 2px;
+  background: black;
+  width: 100%;
+  display: block;
+}
+
+#header .ham_response span::after {
+  content: '';
+  position: relative;
+  bottom: -7px;
+  left: 0;
+  height: 2.5px;
+  background: black;
+  width: 100%;
+  display: block;
+}
+
+/*sec1*/
+.sec1 .number {
+  z-index: 1001;
+}
+
+.sec1>.number>div {
+  width: 70px;
+  height: 115px;
+  float: left;
+  padding: 6px;
+  overflow: hidden;
+}
+
+.sec1>.number>div>div {
+  overflow: hidden;
+  width: auto;
+  height: auto;
+  line-height: 1;
+  text-align: center;
+}
+
+.sec1>.number>div>div span {
+  font-family: "Poppins";
+  display: block;
+  font-size: 7vw;
+  color: #fff;
+  font-weight: 100;
+  opacity: 0.4;
+}
+
+.sec1>.number>div>div span:last-child {
+  font-size: 6vw;
+}
+
+.sec1 .cover {
+  position: fixed;
+  /* position:relative; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+}
+
+.sec1 .cover>div {
+  position: absolute;
+  width: 8.333%;
+  height: 100vh;
+  top: 0;
+  background: black;
+  margin-left: auto;
+  /*가운데정렬*/
+}
+
+.sec1 .cover>div:nth-child(1) {
+  right: calc((100%/12)*11);
+}
+
+.sec1 .cover>div:nth-child(2) {
+  right: calc((100%/12)*10);
+}
+
+.sec1 .cover>div:nth-child(3) {
+  right: calc((100%/12)*9);
+}
+
+.sec1 .cover>div:nth-child(4) {
+  right: calc((100%/12)*8);
+}
+
+.sec1 .cover>div:nth-child(5) {
+  right: calc((100%/12)*7);
+}
+
+.sec1 .cover>div:nth-child(6) {
+  right: calc((100%/12)*6);
+}
+
+.sec1 .cover>div:nth-child(7) {
+  right: calc((100%/12)*5);
+}
+
+.sec1 .cover>div:nth-child(8) {
+  right: calc((100%/12)*4);
+}
+
+.sec1 .cover>div:nth-child(9) {
+  right: calc((100%/12)*3);
+}
+
+.sec1 .cover>div:nth-child(10) {
+  right: calc((100%/12)*2);
+}
+
+.sec1 .cover>div:nth-child(11) {
+  right: calc(100%/12);
+}
+
+.sec1 .cover>div:nth-child(12) {
+  right: 0;
+}
+
+
+
+
+/*sec2*/
+.sec2 {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/*sec2 breaks*/
+.sec2 .breaks {
+  position: relative;
+  width: 83.333%;
+  height: 60vh;
+  display: flex;
+}
+
+.sec2 .breaks div {
+  overflow: hidden;
+  width: 10%;
+  height: 100%;
+}
+
+.sec2 .breaks div.break1 {
+  background: url(../img/charles-deluvio-Lks7vei-eAg-unsplash.jpg)no-repeat center;
+  background-position: 0 0;
+  background-size: 1100%;
+}
+
+.sec2 .breaks div.break2 {
+  background: url(../img/charles-deluvio-Lks7vei-eAg-unsplash.jpg)no-repeat center;
+  background-position: 10% 0;
+  background-size: 1100%;
+}
+
+.sec2 .breaks div.break3 {
+  background: url(../img/charles-deluvio-Lks7vei-eAg-unsplash.jpg)no-repeat center;
+  background-position: 20% 0;
+  background-size: 1100%;
+}
+
+.sec2 .breaks div.break4 {
+  background: url(../img/charles-deluvio-Lks7vei-eAg-unsplash.jpg)no-repeat center;
+  background-position: 30% 0;
+  background-size: 1100%;
+}
+
+.sec2 .breaks div.break5 {
+  background: url(../img/charles-deluvio-Lks7vei-eAg-unsplash.jpg)no-repeat center;
+  background-position: 40% 0;
+  background-size: 1100%;
+}
+
+.sec2 .breaks div.break6 {
+  background: url(../img/charles-deluvio-Lks7vei-eAg-unsplash.jpg)no-repeat center;
+  background-position: 50% 0;
+  background-size: 1100%;
+}
+
+.sec2 .breaks div.break7 {
+  background: url(../img/charles-deluvio-Lks7vei-eAg-unsplash.jpg)no-repeat center;
+  background-position: 60% 0;
+  background-size: 1100%;
+}
+
+.sec2 .breaks div.break8 {
+  background: url(../img/charles-deluvio-Lks7vei-eAg-unsplash.jpg)no-repeat center;
+  background-position: 70% 0;
+  background-size: 1100%;
+}
+
+.sec2 .breaks div.break9 {
+  background: url(../img/charles-deluvio-Lks7vei-eAg-unsplash.jpg)no-repeat center;
+  background-position: 80% 0;
+  background-size: 1100%;
+}
+
+.sec2 .breaks div.break10 {
+  background: url(../img/charles-deluvio-Lks7vei-eAg-unsplash.jpg)no-repeat center;
+  background-position: 90% 0;
+  background-size: 1100%;
+}
+
+.break2:before {
+  content: 'PORTFOLIO';
+  position: relative;
+  left: 58.333%;
+  line-height: 60vh;
+  display: inline-block;
+  height: 60vh;
+  color: #fff;
+  font-size: 10vw;
+  font-family: 'Poppins';
+  font-weight: 800;
+  text-align: center;
+}
+
+.break3:before {
+  content: 'PORTFOLIO';
+  position: relative;
+  left: -38.667%;
+  line-height: 60vh;
+  display: inline-block;
+  height: 60vh;
+  color: #fff;
+  font-size: 10vw;
+  font-family: 'Poppins';
+  font-weight: 800;
+  text-align: center;
+}
+
+.break4:before {
+  content: 'PORTFOLIO';
+  position: relative;
+  left: -138.5%;
+  line-height: 60vh;
+  display: inline-block;
+  height: 60vh;
+  color: #fff;
+  font-size: 10vw;
+  font-family: 'Poppins';
+  font-weight: 800;
+  text-align: center;
+}
+
+.break5:before {
+  content: 'PORTFOLIO';
+  position: relative;
+  left: -238.5%;
+  line-height: 60vh;
+  display: inline-block;
+  height: 60vh;
+  color: #fff;
+  font-size: 10vw;
+  font-family: 'Poppins';
+  font-weight: 800;
+  text-align: center;
+}
+
+.break6:before {
+  content: 'PORTFOLIO';
+  position: relative;
+  left: -341%;
+  line-height: 60vh;
+  display: inline-block;
+  height: 60vh;
+  color: #fff;
+  font-size: 10vw;
+  font-family: 'Poppins';
+  font-weight: 800;
+  text-align: center;
+}
+
+.break7:before {
+  content: 'PORTFOLIO';
+  position: relative;
+  left: -441%;
+  line-height: 60vh;
+  display: inline-block;
+  height: 60vh;
+  color: #fff;
+  font-size: 10vw;
+  font-family: 'Poppins';
+  font-weight: 800;
+  text-align: center;
+}
+
+.break8:before {
+  content: 'PORTFOLIO';
+  position: relative;
+  left: -531%;
+  line-height: 60vh;
+  display: inline-block;
+  height: 60vh;
+  color: #fff;
+  font-size: 10vw;
+  font-family: 'Poppins';
+  font-weight: 800;
+  text-align: center;
+}
+
+.break9:before {
+  content: 'PORTFOLIO';
+  position: relative;
+  left: -631%;
+  line-height: 60vh;
+  display: inline-block;
+  height: 60vh;
+  color: #fff;
+  font-size: 10vw;
+  font-family: 'Poppins';
+  font-weight: 800;
+  text-align: center;
+}
+
+.sec2 .txt-box {
+  position: absolute;
+  bottom: -4vh;
+  left: 18vw;
+  width:20%;
+  padding: 30px;
+  background-color: black;
+}
+
+.sec2 .txt-box p {
+  color: #fff;
+  font-size: 2vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+}
+
+.sec2 .txt-box span{
+
+  display:block;
+  color:#fff;
+  font-family: 'Poppins', sans-serif;
+  font-size:1.5vw;
+  font-weight:100;
+  padding-top:100px;
+}
+
+.sec2 .txt-box span svg{
+  width:30px;
+}
