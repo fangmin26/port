@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'S-CoreDream-9Black';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff');
+  font-family: 'S-CoreDream-2ExtraLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -27,6 +27,13 @@
   transform: translate(-50%, -50%);
 }
 
+/*container*/
+.container {
+  width: 83.6vw;
+  height: inherit;
+  margin: 0 auto;
+}
+
 /*layout*/
 #section1 {
   height: 1500px;
@@ -34,7 +41,7 @@
 }
 
 #section2 {
-  height: 3000px;
+  height: 900px;
 }
 
 #section3 {
@@ -76,18 +83,22 @@
 
 #header h1 {
   font-size: 46px;
-  margin-left: 9.5vw;
+  margin-left: 8vw;
   font-family: 'Poppins', sans-serif;
 }
 
 #header h1 span {
+  position: absolute;
   font-size: 14px;
   font-weight: 200;
   padding-left: 30px;
+  top: 100px;
+  transition: all 1.5s ease-out;
+
 }
 
 #header .ham {
-  margin-right: 9.5vw;
+  margin-right: 8.2vw;
   font-size: 14px;
   font-weight: 200;
   padding-top: 25px;
@@ -436,9 +447,9 @@
 
 .sec2 .txt-box {
   position: absolute;
-  bottom: -4vh;
+  bottom: -3vh;
   left: 18vw;
-  width:20%;
+  width: 21%;
   padding: 30px;
   background-color: black;
 }
@@ -450,16 +461,79 @@
   font-weight: 100;
 }
 
-.sec2 .txt-box span{
-
-  display:block;
-  color:#fff;
+.sec2 .txt-box span {
+  display: block;
+  color: #fff;
   font-family: 'Poppins', sans-serif;
-  font-size:1.5vw;
-  font-weight:100;
-  padding-top:100px;
+  font-size: 1.2vw;
+  font-weight: 100;
+  padding-top: 100px;
 }
 
-.sec2 .txt-box span svg{
-  width:30px;
+.sec2 .txt-box span svg {
+  width: 26px;
+  opacity:.7;
+}
+
+/*sec3*/
+.sec3{
+
+}
+
+.sec3 >div{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec3 .intro_desc div{
+  width:50%;
+  padding: 200px 0;
+}
+
+.sec3 .intro_desc div p{
+  display: block;
+  line-height: 1.8;
+  font-family: 'S-CoreDream-2ExtraLight';
+  font-size: 1.2vw;
+  padding-right:70px;
+}
+
+.sec3 .intro_pic > div{
+ width:50%;
+ height:800px;
+ padding-right:70px;
+ position:relative;
+}
+.sec3 .intro_pic div h2{
+  position:absolute;
+  top:200px;
+  left:0;
+  font-family: 'Poppins', sans-serif;
+  font-weight:900;
+  font-size:4vw;
+}
+.sec3 .intro_pic div p{
+  width: 100%;
+  font-size: 1.2vw;
+  line-height: 1.8;
+  font-family: 'S-CoreDream-2ExtraLight';
+  font-size: 1.2vw;
+  padding:300px 0;
+}
+.sec3 .intro_pic div:last-child{
+  transform:translateY(80px);
+}
+.sec3 .intro_pic div:last-child div{
+  width:370px;
+  height:370px;
+  background:red;
+  padding-top:30px;
+}
+.sec3 .intro_pic div:last-child img{
+  position:absolute;
+  top:180px;
+  left:110px;
+  width:370px;
+  height:370px;
 }
