@@ -524,16 +524,56 @@
 .sec3 .intro_pic div:last-child{
   transform:translateY(80px);
 }
-.sec3 .intro_pic div:last-child div{
+.sec3 .intro_pic div:last-child .red{
+  position:absolute;
   width:370px;
   height:370px;
-  background:red;
-  padding-top:30px;
+  background:transparent;
+top:0;
+left:0;
+  overflow:hidden;
+  margin-top:30px;
 }
-.sec3 .intro_pic div:last-child img{
+.sec3 .intro_pic div:last-child .red > div{
+  position:absolute;
+  top:-80px;
+  left:-370px;
+  background:red;
+  width:370px;
+  height:370px;
+  transition:all 1s ease;
+}
+.sec3 .intro_pic div:last-child .imgbox{
+  position:absolute;
+  width:370px;
+  height:370px;
+  background:transparent;
+  top:180px;
+  left:110px;
+  overflow:hidden;
+}
+.sec3 .intro_pic div:last-child .imgbox img{
+  position:absolute;
+  top:0;
+  left:-370px;
+  width:370px;
+  height:370px;
+  transition:all 1s ease;
+}
+/* .sec3 .intro_pic div:last-child .imgbox::before{
+  position:absolute;
+  top:0;
+  left:-370px;
+  content:url(../img/intro/KakaoTalk_20210313_204539332.jpg);
+  width:370px;
+  height:370px;
+  display:block;
+} */
+
+/* .sec3 .intro_pic div:last-child img{
   position:absolute;
   top:180px;
   left:110px;
   width:370px;
   height:370px;
-}
+} */
