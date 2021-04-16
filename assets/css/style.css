@@ -5,6 +5,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-5Medium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .scroll {
   position: fixed;
   top: 10px;
@@ -45,15 +59,20 @@
 }
 
 #section3 {
-  height: 3000px;
 }
 
+#mainmenu {
+  height:1800px;
+  background:rgba(0,0,0,0.5)
+}
 #section4 {
-  height: 3000px;
+  padding: 300px 0;
+  position:relative;
 }
 
 #section5 {
-  height: 3000px;
+  background:#f2f2f2;
+  height:1000px;
 }
 
 #section6 {
@@ -472,108 +491,356 @@
 
 .sec2 .txt-box span svg {
   width: 26px;
-  opacity:.7;
+  opacity: .7;
 }
 
 /*sec3*/
-.sec3{
 
-}
-
-.sec3 >div{
-  width:100%;
+.sec3>div {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.sec3 .intro_desc div{
-  width:50%;
+
+.sec3 .intro_desc div {
+  width: 50%;
   padding: 200px 0;
 }
 
-.sec3 .intro_desc div p{
+.sec3 .intro_desc div p {
   display: block;
   line-height: 1.8;
-  font-family: 'S-CoreDream-2ExtraLight';
+  font-family: 'S-CoreDream-3Light';
   font-size: 1.2vw;
-  padding-right:70px;
+  padding-right: 70px;
 }
 
-.sec3 .intro_pic > div{
- width:50%;
- height:800px;
- padding-right:70px;
- position:relative;
+.sec3 .intro_pic>div {
+  width: 50%;
+  height: 800px;
+  padding-right: 70px;
+  position: relative;
 }
-.sec3 .intro_pic div h2{
-  position:absolute;
-  top:200px;
-  left:0;
+
+.sec3 .intro_pic div h2 {
+  position: absolute;
+  top: 200px;
+  left: 0;
   font-family: 'Poppins', sans-serif;
-  font-weight:900;
-  font-size:4vw;
+  font-weight: 900;
+  font-size: 4vw;
 }
-.sec3 .intro_pic div p{
+
+.sec3 .intro_pic div p {
   width: 100%;
   font-size: 1.2vw;
   line-height: 1.8;
-  font-family: 'S-CoreDream-2ExtraLight';
+  font-family: 'S-CoreDream-3Light';
   font-size: 1.2vw;
-  padding:300px 0;
+  padding: 300px 0;
 }
-.sec3 .intro_pic div:last-child{
-  transform:translateY(80px);
-}
-.sec3 .intro_pic div:last-child .red{
-  position:absolute;
-  width:370px;
-  height:370px;
-  background:transparent;
-top:0;
-left:0;
-  overflow:hidden;
-  margin-top:30px;
-}
-.sec3 .intro_pic div:last-child .red > div{
-  position:absolute;
-  top:-80px;
-  left:-370px;
-  background:red;
-  width:370px;
-  height:370px;
-  transition:all 1s ease;
-}
-.sec3 .intro_pic div:last-child .imgbox{
-  position:absolute;
-  width:370px;
-  height:370px;
-  background:transparent;
-  top:180px;
-  left:110px;
-  overflow:hidden;
-}
-.sec3 .intro_pic div:last-child .imgbox img{
-  position:absolute;
-  top:0;
-  left:-370px;
-  width:370px;
-  height:370px;
-  transition:all 1s ease;
-}
-/* .sec3 .intro_pic div:last-child .imgbox::before{
-  position:absolute;
-  top:0;
-  left:-370px;
-  content:url(../img/intro/KakaoTalk_20210313_204539332.jpg);
-  width:370px;
-  height:370px;
-  display:block;
-} */
 
-/* .sec3 .intro_pic div:last-child img{
+.sec3 .intro_pic div:last-child {
+  transform: translateY(80px);
+}
+
+.sec3 .intro_pic div:last-child .red {
+  position: absolute;
+  width: 370px;
+  height: 370px;
+  background: transparent;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.sec3 .intro_pic div:last-child .red>div {
+  position: absolute;
+  top: -80px;
+  left: -370px;
+  background: red;
+  width: 370px;
+  height: 370px;
+  transition: all 1s ease;
+}
+
+.sec3 .intro_pic div:last-child .imgbox {
+  position: absolute;
+  width: 370px;
+  height: 370px;
+  background: transparent;
+  top: 180px;
+  left: 110px;
+  overflow: hidden;
+}
+
+.sec3 .intro_pic div:last-child .imgbox img {
+  position: absolute;
+  top: 0;
+  left: -370px;
+  width: 370px;
+  height: 370px;
+  transition: all 1s ease;
+}
+/*mainmenu*/
+.mainmenu{
+  padding:200px 0;
+}
+.mainmenu .sect{
+  width:100%;
+  padding:40px 0;
+  display:flex;
+  align-items: center;
+}
+.mainmenu .sect > div{
+  width:50%;
+  height:420px;
+  position:relative;
+  overflow: hidden;
+}
+.mainmenu .sect > div.css_m_cont{
+  height:600px;
+  width: 40%;
+    margin-left: 10%;
+}
+.mainmenu .sect > div img{
   position:absolute;
-  top:180px;
-  left:110px;
-  width:370px;
-  height:370px;
+  top:0;
+  left:-650px;
+  width:100%;
+  height:100%;
+  transition:all 1s ease;
+}
+.mainmenu .sect > div img.jsM{
+  left:550px;
+}
+.mainmenu .m_txt{
+  display:flex;
+  align-items: center;
+}
+.mainmenu .m_txt p{
+  padding-left:120px;
+  font-family: 'S-CoreDream-5Medium';
+  font-size:3.5vw;
+  letter-spacing: -1.5px;
+}
+/* .mainmenu .m_txt.css_m_txt p{
+  padding-left:0;
+  padding-right:120px;
 } */
+.mainmenu .m_txt p strong{
+  font-family: 'S-CoreDream-3Light';
+  color:#ccc;
+}
+/*sec4*/
+#section4 .black_zoomin{
+  position:absolute;
+  z-index:1005;
+  background:#000;
+  transition:all 1s ease-in;
+}
+.sec4 {
+  width: 100%;
+}
+
+.sec4 .desktop {
+  height: 463px;
+  display: flex;
+}
+
+.sec4 .desktop>div {
+  height: 100%;
+}
+
+.sec4 .desktop div.desktop_menu {
+  width: 40%;
+}
+.sec4 .desktop div.desktop_menu ul{
+  padding-top:70px;
+}
+.sec4 .desktop div.desktop_menu ul li {
+  width: 63%;
+  display: block;
+  overflow: hidden;
+}
+
+.sec4 .desktop_menu ul li .menu_btn {
+  outline-style: none;
+  background: none;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.sec4 .desktop_menu ul li .menu_btn:before {
+  width: 100%;
+  height: 1px;
+  content: '';
+  background: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+}
+
+.sec4 .desktop_menu ul li .menu_btn:after {
+  width: 100%;
+  height: 1px;
+  content: '';
+  background: #f2f2f2;
+  position: absolute;
+  bottom: 0;
+  right: -400px;
+  display: block;
+}
+
+.sec4 .desktop_menu ul li .menu_btn.pushed:after {
+  animation: push 1s ease forwards;
+}
+
+@keyframes push {
+  from {
+    right: -400px
+  }
+
+  to {
+    right: 0;
+  }
+}
+
+.sec4 .desktop_menu ul li .menu_btn.backto:after {
+  animation: backto 1s ease forwards;
+}
+
+@keyframes backto {
+  from {
+    right: 0px
+  }
+
+  to {
+    right: -400px;
+  }
+}
+
+.sec4 .desktop_menu ul li .arrow {
+  width: 25px;
+  height: 25px;
+  background: #f2f2f2;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+.sec4 .desktop_menu ul li .arrow .material-icons{
+  transform:rotate(0deg);
+  transition:all 1s ease;
+}
+.sec4 .desktop_menu ul li .arrow .material-icons.rotate{
+  transform:rotate(-180deg);
+}
+.sec4 .desktop_menu ul li .menu_btn h3 {
+  font-family: 'S-CoreDream-5Medium';
+  font-size: 1.3vw;
+  line-height: 100px;
+  display: block;
+  text-align: left;
+}
+
+.sec4 .desktop_menu ul li .menu_cont {
+  padding-top:20px;
+}
+
+.sec4 .desktop_menu ul li .menu_cont p {
+  font-family: 'S-CoreDream-3Light';
+  font-size: 1.1vw;
+  color: rgb(176, 175, 175);
+}
+.sec4 .desktop_menu ul li .menu_cont > a{
+  padding:20px 0 7px 0;
+  display:inline-block;
+  width:100%;
+  text-align:right;
+  font-family: 'S-CoreDream-3Light';
+  font-size: .9vw;
+  transition:all .6s ease;
+} 
+
+.sec4 .desktop_menu ul li .menu_cont > a:hover{
+  color:#ccc;
+}
+.sec4 .desktop .desktop_img {
+  width: 60%;
+  padding-top:60px;
+  position:relative;
+}
+.sec4 .desktop .desktop_img:before{
+  content:'';
+  width:150px;
+  height:150px;
+  background:black;
+  position:absolute;
+  top:0;
+  left:0;
+  display:block;
+  z-index:-2;
+}
+.sec4 .desktop .desktop_img >div {
+  height:100%;
+  overflow:hidden;
+  position:relative;
+}
+.sec4 .desktop div.desktop_img .desktop_png {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: url(../img/png/display.png)no-repeat;
+  background-size: contain;
+}
+
+.sec4 .desktop_img .desktop_slide {
+  position: absolute;
+  top: 32px;
+  left: 79.5px;
+  width:608px;
+  z-index:-1;
+}
+.sec4 .desktop_img .desktop_slide img{
+  width:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  transition:all ease 3s;
+}
+
+/*sec5*/
+.sec5{
+  width:100%;
+  height:100%;
+  position:relative;
+  /* display:flex;
+  justify-content: center;
+  align-items: center; */
+}
+.sec5 .phone{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  z-index:5;
+  background:url(../img/png/screen.png);
+  background-size: cover;
+  width: 284px;
+  height: 545px;
+}
+.sec5 .glide{
+  position:relative;
+  top:50%;
+  transform:translateY(-50%)
+}
+.sec5 .glide img{
+  width:250px;
+}
