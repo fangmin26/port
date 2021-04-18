@@ -61,16 +61,17 @@
 
 #section3 {
   padding-bottom:200px;
+  overflow:hidden;
 }
 
 #mainmenu {
   padding:300px 0;
-  overflow-X:hidden;
+  overflow:hidden;
 }
 
 #section4 {
+  overflow:hidden;
   padding: 300px 0;
-  position: relative;
 }
 
 #section5 {
@@ -93,6 +94,7 @@
 /* header */
 #header {
   position: fixed;
+  display:block;
   z-index: 1000;
   left: 0;
   top: 0;
@@ -194,15 +196,37 @@
   color: #fff;
   font-weight: 100;
   opacity: 0.4;
+  padding: 6px 0;
 }
 
 .sec1>.number>div>div span:last-child {
   font-size: 6vw;
 }
+.sec1>.letter{
+  display: block;
+  overflow:hidden;
+}
 
+.sec1>.letter.fixed{
+  z-index:1004;
+}
+.sec1>.letter span{
+  float: left;
+  font-family: "Poppins";
+  display: block;
+  font-size: 6vw;
+  color: #fff;
+  font-weight: 100;
+  opacity: 1;
+  padding: 6px;
+  width: 70px;
+  height: 115px;
+  margin-top: -37px;
+  text-align: center;
+  line-height: 1.4;
+}
 .sec1 .cover {
   position: fixed;
-  /* position:relative; */
   top: 0;
   left: 0;
   width: 100%;
@@ -595,7 +619,7 @@
 .sec3 .intro_pic .right .img2 {
   position: absolute;
   top: 285px;
-  left: 150px;
+  left: 220px;
   width: 370px;
   height: 370px;
 }
@@ -704,10 +728,13 @@
 
 /*sec4*/
 #section4 .black_zoomin {
-  position: absolute;
-  z-index: 1005;
-  background: #000;
-  transition: all 1s ease-in;
+  position: fixed;
+  height: 150px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-69%, -50%);
+  z-index:-1;
+  background:#000;
 }
 
 .sec4 {
@@ -735,6 +762,7 @@
   width: 63%;
   display: block;
   overflow: hidden;
+  cursor:pointer;
 }
 
 .sec4 .desktop_menu ul li .menu_btn {
@@ -853,17 +881,18 @@
   position: relative;
 }
 
-.sec4 .desktop .desktop_img:before {
+.sec4 .desktop .desktop_img .black_back{
   content: '';
   width: 150px;
   height: 150px;
-  background: black;
+  background: #000;
   position: absolute;
   top: 0;
   left: 0;
-  display: block;
   z-index: -2;
+
 }
+
 
 .sec4 .desktop .desktop_img>div {
   height: 100%;
