@@ -65,14 +65,12 @@
 }
 
 #mainmenu {
-  padding: 300px 0;
-  overflow: hidden;
+  height:100vh;
+
 }
 
 #section4 {
-  position:relative;
-  overflow: hidden;
-  padding: 300px 0;
+  height:100vh;
 }
 
 #section5 {
@@ -655,10 +653,12 @@
 
 /*mainmenu*/
 .mainmenu {
-  padding: 300px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display:block;
+  background:black;
+  width:100%;
+  height:100vh;
+  z-index:900;
+  overflow:hidden;
 }
 
 .mainmenu h2 {
@@ -671,6 +671,8 @@
   width: 1200px;
   text-align: right;
   position: relative;
+  top:100px;
+  left:200px;
 }
 
 .mainmenu h2 em {
@@ -695,7 +697,7 @@
 }
 
 .mainmenu .main_sect ul {
-  padding-top: 60px;
+  padding-top: 150px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -724,7 +726,7 @@
 .mainmenu .main_sect ul li h3 {
   font-size: 45px;
   line-height: 1.2;
-  padding-bottom: 85px;
+  padding-bottom: 50px;
 }
 
 .mainmenu .main_sect ul li p {
@@ -733,21 +735,17 @@
 
 /*sec4*/
 #section4 .black_zoomin {
-  position: fixed;
-  height: 150px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-69%, -50%);
-  z-index: -1;
-  background: #000;
+
 }
 
 .sec4 {
   width: 100%;
+  height:100vh;
 }
 
 .sec4 .desktop {
-  height: 463px;
+  width:100%;
+  height:100vh;
   display: flex;
 }
 
@@ -760,11 +758,15 @@
 }
 
 .sec4 .desktop div.desktop_menu ul {
-  padding-top: 70px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 63%;
 }
 
 .sec4 .desktop div.desktop_menu ul li {
-  width: 63%;
+  width: 100%;
   display: block;
   overflow: hidden;
   cursor: pointer;
@@ -882,7 +884,9 @@
 
 .sec4 .desktop .desktop_img {
   width: 60%;
-  padding-top: 60px;
+  height:463px;
+  transform: translateY(-50%);
+  top: 50%;
   position: relative;
 }
 
