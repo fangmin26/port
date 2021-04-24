@@ -65,13 +65,13 @@
 }
 
 #mainmenu {
-  height:100vh;
+  height: 100vh;
 
 }
 
 #section4 {
-  height:100vh;
-  position:relative;
+  height: 100vh;
+  position: relative;
 }
 
 #section5 {
@@ -80,7 +80,7 @@
 }
 
 #section6 {
-  height: 3000px;
+  height: 5000px;
 }
 
 #section7 {
@@ -653,12 +653,12 @@
 
 /*mainmenu*/
 .mainmenu {
-  display:block;
-  background:black;
-  width:100%;
-  height:100vh;
-  z-index:900;
-  overflow:hidden;
+  display: block;
+  background: black;
+  width: 100%;
+  height: 100vh;
+  z-index: 900;
+  overflow: hidden;
 }
 
 .mainmenu h2 {
@@ -671,8 +671,8 @@
   width: 1200px;
   text-align: right;
   position: relative;
-  top:100px;
-  left:200px;
+  top: 100px;
+  left: 200px;
 }
 
 .mainmenu h2 em {
@@ -735,18 +735,18 @@
 
 /*sec4*/
 #section4 .black_zoomin {
-  position:absolute;
-  background:#000;
+  position: absolute;
+  background: #000;
 }
 
 .sec4 {
   width: 100%;
-  height:100vh;
+  height: 100vh;
 }
 
 .sec4 .desktop {
-  width:100%;
-  height:100vh;
+  width: 100%;
+  height: 100vh;
   display: flex;
 }
 
@@ -762,7 +762,7 @@
   position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   width: 63%;
 }
 
@@ -885,7 +885,7 @@
 
 .sec4 .desktop .desktop_img {
   width: 60%;
-  height:463px;
+  height: 463px;
   transform: translateY(-50%);
   top: 50%;
   position: relative;
@@ -900,12 +900,12 @@
   top: 0;
   left: 0;
   z-index: -2;
-  color:#fff;
-  font-size:1.3vw;
+  color: #fff;
+  font-size: 1.3vw;
   font-family: 'Poppins', sans-serif;
-  font-weight:700;
-  text-align:center;
-  line-height:135px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 135px;
 }
 
 
@@ -950,62 +950,364 @@
 }
 
 /*sec5*/
-.sec5{
+.sec5 {
   background: #f2f2f2;
-  width:100%;
-  height:100vh;
-}
-.sec5 .phone_imgs{
-  width:100%;
-  height:100%;
-  display:flex;
-  align-items:center;
-}
-.sec5 .phone_imgs img{
-  width: 300px;
-  margin-left:100px;
-  margin-top:1400px;
-}
-/* .sec5 {
-  height: 100%;
-  width: 100vh;
-  display: flex;
-  align-items: center;
-
+  width: 100%;
+  height: 100vh;
 }
 
 .sec5 .phone_imgs {
-  position: absolute;
-  width: 200%;
+  width: 100%;
   height: 100%;
-  margin-top: 400px;
+  display: flex;
+  align-items: center;
 }
 
 .sec5 .phone_imgs img {
-  width: 350px;
-  margin-left: 50px;
+  width: 300px;
+  margin-left: 100px;
+  margin-top: 1400px;
 }
 
-.sec5 .phone_imgs img:nth-child(1) {
-  transform: translateY(0);
+/*sec6*/
+.sec6 {
+  background: #000;
+  width: 100%;
+  height: 100vh;
 }
 
-.sec5 .phone_imgs img:nth-child(2) {
-  transform: translateY(100px);
+.sec6 .css {
+  width: 100%;
+  height: 100vh;
+  display: flex;
 }
 
-.sec5 .phone_imgs img:nth-child(3) {
-  transform: translateY(200px);
+.sec6 .css .left {
+  position: relative;
+  width: 72.91%;
+  height: 100%;
 }
 
-.sec5 .phone_imgs img:nth-child(4) {
-  transform: translateY(300px);
+.sec6 .css .left .txt h3 {
+  position: absolute;
+  z-index: 5;
+  top: 70px;
+  left: 178px;
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-width: 2px;
+  color: transparent;
+  font-size: 9vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
 }
 
-.sec5 .phone_imgs img:nth-child(5) {
-  transform: translateY(400px);
+.sec6 .css .left .txt span {
+  position: absolute;
+  z-index: 1;
+  top: 70px;
+  left: 178px;
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-width: 2px;
+  color: #fff;
+  font-size: 9vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
 }
 
-.sec5 .phone_imgs img:nth-child(6) {
-  transform: translateY(500px);
-} */
+.sec6 .css .left .animation {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  width: 65vw;
+  height: 75vh;
+}
+
+.sec6 .css .left .animation div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.sec6 .css .left .animation div iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.sec6 .css .left .animation div iframe.show {
+  z-index: 3;
+}
+
+.sec6 .css .left .animation div .code {
+  width: 100%;
+  height: 95.2%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.sec6 .css .left .animation div .code pre {
+  margin: 0;
+  outline: none;
+}
+
+.sec6 .css .left .label_txt {
+  position: absolute;
+  z-index: 3;
+  top: 500px;
+  left: 780px;
+  width: 550px;
+  color: rgba(255, 255, 255, .6);
+  font-size: 1.2vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  transform: rotate(90deg);
+}
+
+.sec6 .left .move_cir {
+  position: absolute;
+  z-index: 3;
+  top: 470px;
+  left: 970px;
+  border: 3px solid rgb(0, 128, 128);
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.sec6 .left .move_cir::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgb(0, 128, 128);
+  border: 0px solid rgb(0, 128, 128);
+  box-sizing: border-box;
+  transition: all .5s ease;
+}
+
+.sec6 .left .move_cir a {
+  display: block;
+}
+
+.sec6 .left .move_cir:hover::before {
+  width: 170px;
+  height: 170px;
+}
+
+.sec6 .left .move_cir span {
+  display: block;
+  line-height: 170px;
+  text-align: center;
+  color: #fff;
+  font-size: 1vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  letter-spacing: 5px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  animation: rot 3s infinite linear;
+}
+
+@keyframes rot {
+  0% {
+    transform: rotate(0deg)
+  }
+
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+
+
+.sec6 .css .right {
+  position: relative;
+  width: 30%;
+  height: 100%;
+}
+
+.sec6 .css .right span {
+  position: absolute;
+  top: 200px;
+  left: 168px;
+  -webkit-text-stroke-color: rgba(255, 255, 255, .2);
+  -webkit-text-stroke-width: 2px;
+  color: transparent;
+  font-size: 20vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+}
+
+/*sec7*/
+.sec7 {
+  background: #fff;
+  width: 100%;
+  height: 100vh;
+}
+
+.sec7 .js_fixed {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.sec7 .js_fixed .js_logo {
+  position: absolute;
+  display: block;
+  top: 70px;
+  left: 42px;
+  color: #000;
+  font-size: 28px;
+  font-family: 'Poppins', sans-serif;
+  transform: rotate(270deg);
+}
+
+.sec7 .js_fixed .js_contact {
+  position: absolute;
+  display: block;
+  bottom: 105px;
+  left: 42px;
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  transform: rotate(270deg);
+}
+
+.sec7 .js_fixed .pag {
+  position: absolute;
+  width: 30px;
+  right: 4%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sec7 .js_fixed .pag>div {
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+.sec7 .js_fixed .pag>div:last-child {
+  margin-bottom: 0;
+}
+
+.sec7 .js_fixed .pag .pag_bar {
+  height: 150px;
+}
+
+.sec7 .js_fixed .pag .pag_bar span {
+  margin: 0 auto;
+  width: 1.5px;
+  height: 100%;
+  background: #ccc;
+  display: block;
+}
+
+
+.sec7 .javascript {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.sec7 .javascript>div {
+  width: 50%;
+  height: 100%;
+}
+
+.sec7 .javascript .left {
+  position: relative;
+  overflow: hidden;
+}
+
+.sec7 .javascript .left .js_box {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 66.666%;
+  height: 98%;
+}
+
+.sec7 .javascript .left .js_box iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.sec7 .javascript .left .js_box .blind {
+  position: absolute;
+  top: 0;
+  left: -5px;
+  width: 101%;
+  height: 100px;
+  background: #fff;
+}
+
+.sec7 .javascript .left .game_titback {
+  position: absolute;
+  z-index: 3;
+  width: 600px;
+  height: 400px;
+  top: 50%;
+  left: 94%;
+  transform: translateY(-50%);
+}
+
+.sec7 .javascript .left .game_titback .msk_back {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  transform: translateY(-50%);
+  /* color: #fff; */
+  line-height: 1;
+  font-size: 5.5vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  mix-blend-mode: difference;
+}
+
+.sec7 .javascript .right .game_tit {
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  transform: translateY(-50%);
+  width: 600px;
+  height: 400px;
+}
+
+.sec7 .javascript .right .game_tit em {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  color: #000;
+  font-size: 1.1vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.sec7 .javascript .right .game_tit .msk {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
+  line-height: 1;
+  font-size: 5.5vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
